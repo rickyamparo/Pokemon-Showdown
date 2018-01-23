@@ -47,7 +47,11 @@ describe('Belch', function () {
 		]);
 		battle.join('p2', 'Guest 2', 1, [{species: 'Registeel', ability: 'prankster', moves: ['rest', 'thunderwave']}]);
 		battle.makeChoices('move Uturn', 'move Thunderwave');
+<<<<<<< HEAD
 		battle.makeChoices('switch 2', '');
+=======
+		battle.makeChoices('switch 2');//For U-Turn
+>>>>>>> 290ee368... Take out thunderwave
 		battle.makeChoices('switch 2', 'move Thunderwave');
 		battle.makeChoices('move Belch', 'move Thunderwave');
 		assert.strictEqual(battle.p1.active[0].lastMove.id, 'belch');
